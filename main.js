@@ -35,7 +35,7 @@ function newData(data,len) {
         let img = document.createElement('img');
         img.alt='rect';
         img.src=data[i].icon;
-        boxSkills[i].appendChild(img);
+        boxSkills[i].querySelector('span').appendChild(img);
         userPoints[i].innerText= data[i]['score'];
         totalSum += data[i].score;
     }
@@ -45,7 +45,7 @@ function newData(data,len) {
     verbal[0].innerText= data[2].category;
     visual[0].innerText= data[3].category;
 
-    userPoints.innerHTML = Math.round(totalSum / len)
+    resultScore.innerHTML = Math.round(totalSum / len)
 }
 
 newData(data,data.length);

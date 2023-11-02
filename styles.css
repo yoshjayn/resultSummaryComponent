@@ -21,11 +21,11 @@ main{
 
 }
 .left-col {
-	padding: 20px 30px;
+	padding: 52px 30px;
     background-image: linear-gradient(to top ,hsl(241, 81%, 54%), hsl(252, 100%, 67%) );
 	text-align: center;
 	border-radius: 30px;
-	/* border-bottom-right-radius: 30px; */
+
 }
 .left-col .title{
     color:  hsl(241, 100%, 89%);
@@ -75,6 +75,7 @@ main{
 	font-size: 1.1rem;
 	font-family: 'FontOne';
 	font-weight: 700;
+	padding: 20px;
 }
 .right-col .box {
 	margin: 15px 0;
@@ -95,17 +96,17 @@ main{
 	background: hsla(166, 100%, 37%, 0.056);
 	border-radius: 5px;
 }
-.right-col.box:nth-child(5) {
+.right-col .box:nth-child(5) {
 	background:  hsla(234, 85%, 45%, 0.08);
 	border-radius: 5px;
 	margin-bottom: 20px;
 }
-.right-col .box .box-skill {
+.right-col .box-skill {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
 }
-.right-col .box .box-skill img {
+.right-col .box-skill img {
 	margin-right: 10px;
 }
 .right-col .box-points {
@@ -143,6 +144,10 @@ main{
 	background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 
+footer{
+	position: absolute;
+	bottom: 0;
+}
 
 @media screen and (min-width: 992px) {
 	body {
